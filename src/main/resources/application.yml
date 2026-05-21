@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    write:
+      jdbc-url: jdbc:postgresql://localhost:5432/write_db
+      username: admin
+      password: admin123
+      driver-class-name: org.postgresql.Driver
+
+    read:
+      jdbc-url: jdbc:postgresql://localhost:5432/read_db
+      username: admin
+      password: admin123
+      driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+

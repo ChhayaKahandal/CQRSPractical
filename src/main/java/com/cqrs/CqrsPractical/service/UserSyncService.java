@@ -16,12 +16,12 @@ public class UserSyncService {
 
     public void sync(User user) {
 
-        DBContextHolder.set(DBType.READ);
+       // DBContextHolder.set(DBType.READ);
 
         try {
             readTxService.sync(user); // ✅ transactional method
         } finally {
-            DBContextHolder.clear();
+           // DBContextHolder.clear();
         }
     }
 }
